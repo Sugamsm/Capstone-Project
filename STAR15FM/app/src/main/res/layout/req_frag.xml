@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/requester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding_internal">
+
+            <TextView
+                android:id="@+id/req_head"
+                style="@style/heads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:nextFocusDown="@+id/dedName"
+                android:text="@string/reqs_live" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dedNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/req_head"
+                android:layout_marginBottom="@dimen/layout_padding_internal"
+                android:hint="@string/dedicate_to"
+                android:textColorHint="#fff"
+                app:errorTextAppearance="@style/TIL_Error"
+                app:hintTextAppearance="@style/TIL">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/dedName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/songName"
+                    android:nextFocusUp="@id/req_head"
+                    android:textColor="#fff" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/songNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dedNameLayout"
+                android:layout_marginBottom="@dimen/layout_padding_internal"
+                android:textColorHint="#fff"
+                app:errorTextAppearance="@style/TIL_Error"
+                app:hintTextAppearance="@style/TIL">
+
+                <EditText
+                    android:id="@+id/songName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:hint="@string/song_name"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/albumName"
+                    android:nextFocusUp="@id/dedName"
+                    android:textColor="#fff" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/albumNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/songNameLayout"
+                android:layout_marginBottom="@dimen/layout_padding_internal"
+                android:textColorHint="#fff"
+                app:errorTextAppearance="@style/TIL_Error"
+                app:hintTextAppearance="@style/TIL">
+
+                <EditText
+                    android:id="@+id/albumName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:hint="@string/album"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/reqB"
+                    android:nextFocusUp="@id/songName"
+                    android:textColor="#fff" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/reqB"
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/request_button"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/albumNameLayout"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:nextFocusDown="@+id/req_switcher"
+                android:nextFocusUp="@id/albumName"
+                android:padding="@dimen/layout_padding_internal"
+                android:text="Request"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/requester"
+            android:layout_marginTop="30dp"
+            android:padding="@dimen/layout_padding_internal">
+
+            <Button
+                android:id="@+id/req_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/msg_name_text"
+                android:focusable="true"
+                android:contentDescription="@string/switch_to_dedicate"
+                android:nextFocusUp="@id/reqB"
+                android:padding="5dp"
+                android:text="Dedicate Song"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

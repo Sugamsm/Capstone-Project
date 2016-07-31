@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#448AFF</color>
+
+    <color name="msg_back_from">#414066</color>
+    <color name="msg_back_to">#303F9F</color>
+    <color name="highlight">#FF4081</color>
+    <color name="teal">#009688</color>
+    <color name="text_set">#A42CD6</color>
+    <color name="orange">#F6511D</color>
+    <color name="text_to">#4CAF50</color>
+    <color name="green">#7FB800</color>
+    <color name="orange_shade">#FFB400</color>
+    <color name="azure">#007FFF</color>
+    <color name="dark_blue">#0D2C54</color>
+    <color name="amber">#FFC107</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="msg_name_text">#3F51B5</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="cyan_dark">#0097A7</color>
+
+    <color name="trans_black">#40000000</color>
+</resources>

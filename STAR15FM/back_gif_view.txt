@@ -1,0 +1,84 @@
+package com.slambuddies.star15;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Movie;
+import android.os.SystemClock;
+import android.util.AttributeSet;
+import android.view.View;
+
+import java.io.InputStream;
+
+
+public class GIFView extends View {
+
+    private InputStream gifin;
+    private Movie gifMovie;
+    private int wid, hie;
+    private long movieDuration;
+    private long movieStart;
+
+    public GIFView(Context context) {
+        super(context);
+        init(context);
+    }
+
+    public GIFView(Context context, AttributeSet attrSer) {
+        super(context);
+        init(context);
+    }
+
+    public GIFView(Context context, AttributeSet attrSer, int defStyle) {
+        super(context);
+        init(context);
+    }
+
+    private void init(Context context) {
+        gifin = context.getResources().openRawResource(+ R.drawable.final_bars);
+        gifMovie = Movie.decodeStream(gifin);
+
+        wid = gifMovie.width();
+        hie = gifMovie.height();
+        movieDuration = gifMovie.duration();
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        setMeasuredDimension(wid, hie);
+    }
+
+    private int getMovieWidth() {
+        return wid;
+    }
+
+    private int getMovieHeight() {
+        return hie;
+    }
+
+    private long getMovieDuration() {
+        return movieDuration;
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        long now = SystemClock.uptimeMillis();
+
+        if(movieStart == 0){
+            movieStart = now;
+        }
+
+        if (gifMovie != null) {
+            int dur = gifMovie.duration();
+            if(dur == 0){
+                dur = 1000;
+            }
+
+            int relTime = (int)((now - movieStart)%dur);
+
+            gifMovie.setTime(relTime);
+
+            gifMovie.draw(canvas,0,0);
+            invalidate();
+        }
+    }
+}

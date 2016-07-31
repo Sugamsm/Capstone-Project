@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="@string/edit_un_pref"
+        android:summary="@string/edit_un"
+        android:title="@string/user_name_edit_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/notif_key"
+        android:summaryOff="@string/pref_send_report_summary_no"
+        android:summaryOn="@string/pref_send_report_summary"
+        android:title="@string/pref_send_report" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/album_key"
+        android:summaryOff="@string/album_off"
+        android:summaryOn="@string/album_on"
+        android:title="@string/song_load_prefs" />
+
+</PreferenceScreen>

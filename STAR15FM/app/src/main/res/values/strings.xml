@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">STAR15 FM</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="reg_loader">Signing you up with STAR15 FM.... Checking for Pre-Registration.....</string>
+
+    <string name="empty_et">Fill in the data Buddy!</string>
+    <string name="rj_error">Can\'t Be Your Name&#8230; Please Use Original!</string>
+
+    <string name="slam_live">LIVE CHAT</string>
+    <string name="fm_live">FM LIVE</string>
+    <string name="buds_live">Listener Buddies</string>
+    <string name="deds_live">Dedicate Current Song</string>
+    <string name="reqs_live">Request Song</string>
+    <string name="live_acts">Live Requests &amp; Dedications</string>
+    <string name="act_head">Request or Dedicate</string>
+    <string name="del_acc">Delete Account</string>
+
+
+    <string name="song_error">Error Loading Song Info&#8230;</string>
+    <string name="gen_error">Error! Loading&#8230;</string>
+    <string name="net_error">Network Error&#8230; Connect to a Network!</string>
+    <string name="empty_et_name">Fill in Your Name Buddy!</string>
+    <string name="ded_error">Error Sending Dedication&#8230; Please Try Later!</string>
+    <string name="req_error">Error Sending Request&#8230; Please Try Later!</string>
+    <string name="empty_list">No Data to Display!</string>
+    <string name="name_update_error">Failed to Update Name&#8230; Please Try Later! UserName Remains: </string>
+    <string name="name_update_invalid">Name value Invalid&#8230; will stick with</string>
+
+
+    <string name="rap">Get Addicted To Music&#8230; Let\'s RAP!</string>
+    <string name="mhead_text">A Sugam Mankad Production © 2016&#8230; It\'s Your Boy RJ STAR, Make your Requests &amp; they\'d be played&#8230;</string>
+    <string name="current_song">STAR15 LIVE Currently Playing&#8230;</string>
+    <string name="current_pro">Request Show Every Night @9</string>
+
+    <string name="main_load">Loading from the Server&#8230; Be Patient&#8230; If it takes more time, make sure your Connection is Fast Enough :P&#8230;</string>
+    <string name="req_msg">Sending Request to Sever&#8230; Please Wait!</string>
+
+
+    <string name="chat_hint">Message&#8230;</string>
+    <string name="msg_error">Type a Message&#8230;</string>
+
+    <string name="reqs_single">Requested %1$s for %2$s</string>
+    <string name="reqs">Requested %s</string>
+    <string name="deds">Dedicates to %s</string>
+    <string name="del_chat">Clear Chat</string>
+
+    <string name="album">Album Name</string>
+    <string name="song_name">Song Name</string>
+    <string name="dedicate_to">Dedicate To</string>
+    <string name="ded">Dedicate</string>
+
+    <string name="del_confirm">Are You Sure, you want to  Unregister from STAR15 FM?</string>
+    <string name="yep">Yep!</string>
+    <string name="no_del">Nope!</string>
+    <string name="deleting">Removing Account&#8230; Please Wait&#8230;</string>
+    <string name="success_delete">Successfully Unregistered Account!</string>
+    <string name="error_delete">Error Un&#8211;Registering&#8230; Please Try Later!</string>
+
+    <string name="clear_acts">Clear List</string>
+
+    <string name="first_head">This is STAR15 Pro&#8230;</string>
+    <string name="second_head">LIVE MUSIC!</string>
+    <string name="suboy">It\'s Your Boy RJ STAR&#8230;</string>
+    <string name="lr">Let\'s Rap!!</string>
+
+    <string name="sn_hint">First Last Name&#8230;</string>
+    <string name="sb">Sign Up</string>
+    <string name="log_in">Logged In Live!</string>
+
+    <string name="reg_success">Registration Successful&#8230;</string>
+    <string name="reg_error">Error in Registration!</string>
+
+    <string name="found_reg">Found Registration&#8230; Already Registered as</string>
+    <string name="taken_name">is already taken&#8230; Try another!</string>
+    <string name="disp_name">Displayed as:</string>
+
+    <string name="req_sent">Request Sent&#8230;</string>
+    <string name="ded_sent">Dedication Sent&#8230;</string>
+    <string name="msg_status">Message Status</string>
+    <string name="sign_up">Sign Up Button</string>
+
+
+    <string name="user_name_edit_title">Change User Name</string>
+    <string name="user_name_edit">Enter User Name: 3&#8211;20 length</string>
+    <string name="edit_un_pref">un_edit</string>
+    <string name="edit_un">Edit User Name</string>
+    <string name="notif_key">notif_key</string>
+    <string name="pref_send_report_summary">Receive Notifications when Mentioned</string>
+    <string name="pref_send_report">Receive Notifications</string>
+    <string name="song_load_prefs">Song Loading Details</string>
+    <string name="song_details">Load Song Details</string>
+    <string name="album_art">Load Album Art</string>
+    <string name="pref_send_report_summary_no">You will not be Notified!</string>
+    <string name="album_key">album_art_key</string>
+    <string name="album_off">Album Art will not be Loaded!</string>
+    <string name="album_on">Album Art will be Loaded!</string>
+
+    <string name="name_updated">User Name Updated as:</string>
+    <string name="name_updating">Updating User Name with Server&#8230;</string>
+    <string name="taken_name_2">Name not Available&#8230; Try another!</string>
+
+    <string name="play_button">Play-Pause Button</string>
+    <string name="current_pro_widget">Current Show Live!</string>
+    <string name="loading_song_widget">Loading.....</string>
+
+    <string name="listeners_tuned">Listener(s) Tuned In&#8230;</string>
+
+    <string name="imei_msg">This Permission is used by the App in order to check if there is any Pre-Registration of this particular device&#8230; If you wish to change the user name once used by the Device, you can do that once you register in Settings menu.</string>
+    <string name="imei_title">Simple Buddy!</string>
+    <string name="got_it">Got It!</string>
+    <string name="un_et_length">User Name Must be 3&#8211;20 Characters!</string>
+    <string name="et_error">Really! From 3&#8211;20 chars!</string>
+
+
+    <string name="delete">Delete</string>
+    <string name="status">Status</string>
+    <string name="r_send">Resend</string>
+    <string name="msg_dialog_title">Message Options</string>
+
+    <string name="success_status_display">Message %1s has been sent Successfully!</string>
+    <string name="failed_status_display">Message %1s has not been sent.</string>
+    <string name="album_art_error">Error Loading Album Art!</string>
+    <string name="fm_not_live">FM is not Live Currently&#8230; Tune in will be Live Soon!</string>
+    <string name="fm_not_live_req_error">Not a Live Request Show&#8230; Will be played when RJ is back!</string>
+    <string name="mentioned">You got Mentioned!</string>
+    <string name="fm_mentions">FM Live Mentions!</string>
+
+    <string name="fm_multiple_notifs">%d new Notifications!</string>
+
+    <string name="fm_notif_requested">%1$s Requested %2$s for you!</string>
+    <string name="fm_notif_dedicated">%s Dedicated a Song to you!</string>
+    <string name="fm_notif_slam">%s mentioned you in Live Chat!</string>
+    <string name="un_et_alphabet">At Least 3 Alphabets needed! No Symbols Please!</string>
+    <string name="cancelled_pd_update">Will be Updated! as</string>
+    <string name="refresh">Refresh FM Status</string>
+    <string name="msg_send_error">Error Sending Message! Sent as soon as Network responds.\nPress and Hold the message for Options.</string>
+    <string name="dedicate_button">Dedicate Button</string>
+    <string name="switch_to_request">Switch To Request</string>
+    <string name="switch_to_dedicate">Switch to Dedicate</string>
+    <string name="request_button">Request Button</string>
+    <string name="send_message">Send Message</string>
+    <string name="ded_should">Dedication will be Sent!</string>
+    <string name="req_should">Request will be sent!</string>
+
+</resources>

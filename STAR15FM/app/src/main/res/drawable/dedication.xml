@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/msg_back_to" />
+
+    <corners android:radius="@dimen/layout_padding" />
+
+
+    <padding
+        android:bottom="@dimen/layout_padding_internal"
+        android:left="@dimen/layout_padding_internal"
+        android:right="@dimen/layout_padding_internal"
+        android:top="@dimen/layout_padding_internal" />
+
+</shape>

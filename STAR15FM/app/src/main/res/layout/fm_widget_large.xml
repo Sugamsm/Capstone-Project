@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/app_name"
+            style="@style/heads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/app_name" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_name"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/album_art_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/album_art_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/layout_padding_internal">
+
+                <TextView
+                    android:id="@+id/proName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/layout_padding_internal"
+                    android:background="@color/trans_black"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/current_pro_widget"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_heads"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/songName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/proName"
+                    android:layout_marginBottom="@dimen/layout_padding_internal"
+                    android:background="@color/trans_black"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusDown="@+id/widget_play"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/current_song"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold">
+
+                    <requestFocus />
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/widget_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/trans_black"
+                    android:focusable="true"
+                    android:nextFocusUp="@id/songName"
+                    android:src="@mipmap/ic_play_arrow_white_48dp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="layout_padding_internal">7dp</dimen>
+
+    <dimen name="appbar_elevation">4dp</dimen>
+
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_heads">22sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+
+    <dimen name="sides">16dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="widget_default_width">250dp</dimen>
+    <dimen name="widget_default_height">110dp</dimen>
+    <dimen name="widget_resize_height">110dp</dimen>
+    <dimen name="widget_resize_width">250dp</dimen>
+
+    <dimen name="widget_resize_height_large">180dp</dimen>
+
+</resources>

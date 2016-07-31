@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/startup_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/back_14" />
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/sides"
+        android:paddingLeft="@dimen/sides"
+        android:paddingRight="@dimen/sides"
+        android:paddingStart="@dimen/sides"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/mHTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/first_head"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_heads"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mHTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mHTag"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="@string/second_head"
+            android:textColor="#FF7E00"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/un_ex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/su_et"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/su_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            app:errorTextAppearance="@style/TIL_Error"
+            app:hintTextAppearance="@style/TIL">
+
+            <EditText
+                android:id="@+id/signupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="@string/sn_hint"
+                android:inputType="textCapWords"
+                android:nextFocusDown="@+id/suB"
+                android:padding="5dp"
+                android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/suB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/su_et"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/azure"
+            android:contentDescription="@string/sign_up"
+            android:focusable="true"
+            android:nextFocusDown="@id/su_et"
+            android:nextFocusUp="@id/signupName"
+            android:text="@string/sb"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/mTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="@string/lr"
+            android:textColor="@color/azure"
+            android:textSize="@dimen/text_size_heads"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mTag2"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="@string/suboy"
+            android:textColor="@color/azure"
+            android:textSize="@dimen/text_size_heads"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</FrameLayout>

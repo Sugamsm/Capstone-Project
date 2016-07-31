@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingStart="@dimen/layout_padding">
+
+        <RelativeLayout
+            android:id="@+id/dedicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding">
+
+            <TextView
+                android:id="@+id/ded_head"
+                style="@style/heads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:nextFocusDown="@+id/cDedBudName"
+                android:text="@string/deds_live" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dedBudLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ded_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/layout_padding_internal"
+                android:textColorHint="#fff"
+                app:errorTextAppearance="@style/TIL_Error"
+                app:hintTextAppearance="@style/TIL">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/cDedBudName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dedicate_to"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/dedSub"
+                    android:padding="8dp"
+                    android:textColor="#FFF" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/dedSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dedBudLayout"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:contentDescription="@string/dedicate_button"
+                android:nextFocusDown="@+id/ded_switcher"
+                android:padding="5dp"
+                android:text="@string/ded"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dedicator"
+            android:layout_marginTop="50dp"
+            android:padding="@dimen/layout_padding_internal">
+
+            <Button
+                android:id="@+id/ded_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/msg_name_text"
+                android:focusable="true"
+                android:contentDescription="@string/switch_to_request"
+                android:nextFocusUp="@id/dedSub"
+                android:padding="5dp"
+                android:text="@string/reqs_live"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
