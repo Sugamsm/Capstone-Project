@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'Star15 FM'
+            keyPassword 'star15udacity'
+            storeFile file('/UdacityCapstone8FM.jks')
+            storePassword 'star15udacity'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "com.slambuddies.star15"
         minSdkVersion 19
@@ -16,13 +23,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
-
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:recyclerview-v7:23.4.0'
